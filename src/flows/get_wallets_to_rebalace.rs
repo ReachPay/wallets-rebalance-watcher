@@ -46,7 +46,7 @@ async fn get_rebalance_trashhold(app: &Arc<AppContext>) -> HashMap<String, f64> 
         .values()
         .flat_map(|x| {
             x.values()
-                .map(|x| (x.base_fireblocks_id.clone(), x.rebalance_trashold))
+                .map(|x| (x.fireblocks_id.clone(), x.rebalance_trashold))
         })
         .collect();
 }
