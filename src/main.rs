@@ -16,5 +16,6 @@ async fn main() {
 
     app.sb_client.start().await;
     app.nosql_connection.start().await;
+    rebalance_timer.start(app.app_states.clone(), my_logger::LOGGER.clone());
     app.app_states.wait_until_shutdown().await;
 }

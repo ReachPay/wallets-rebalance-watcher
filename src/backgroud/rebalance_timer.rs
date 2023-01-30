@@ -24,7 +24,6 @@ impl MyTimerTick for RebalanceCheckTimer {
             .map(|x| x.to_owned().into())
             .collect();
 
-
         self.app.rebalance_event_publisher.publish_messages(&data_to_publish).await.unwrap();
     }
 }
