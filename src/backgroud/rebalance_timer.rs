@@ -34,6 +34,7 @@ impl Into<FireblocksRebalanceCommand> for FireblocksBridgeVaultWallet {
         FireblocksRebalanceCommand{
             asset_id: self.asset,
             vault_id: self.vault_id,
+            rebalance_amount: self.available_balance,
         }
     }
 }

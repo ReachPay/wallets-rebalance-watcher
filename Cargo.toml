@@ -21,7 +21,7 @@ flurl = { tag = "0.2.3", git = "https://github.com/MyJetTools/fl-url.git" }
 my-service-bus-tcp-client = { tag = "0.2.1", git = "https://github.com/MyJetTools/my-service-bus-tcp-client.git" }
 my-service-bus-abstractions = { tag = "0.1.1", git = "https://github.com/MyJetTools/my-service-bus-abstractions.git"}
 
-my-sb-contracts = { tag = "0.2.7", git = "https://github.com/ReachPay/my-sb-contracts.git", features = [
+my-sb-contracts = { tag = "0.2.8", git = "https://github.com/ReachPay/my-sb-contracts.git", features = [
     "fireblocks-rebalance-command",
 ] }
 
